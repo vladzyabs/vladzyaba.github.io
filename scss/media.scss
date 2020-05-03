@@ -1,0 +1,301 @@
+@import "constants.scss";
+
+// Portrait
+@media (min-width: 640px) {
+    .intro {
+        min-height: 386px;
+
+        .intro-slider__item {
+            min-height: 386px;
+        }
+
+        .intro-slider__title {
+            padding-top: 50px;
+            font-size: 60px;
+            line-height: 60px;
+            max-width: 385px;
+            margin-bottom: 45px;
+        }
+
+        .intro-slider__more-btn {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+            line-height: 18px;
+            color: #fff;
+            padding: 15px 45px;
+
+            display: block;
+            background-color: $color-accent;
+            max-width: 200px;
+            margin: 0 auto;
+            border-radius: 3px;
+            border: 2px solid $color-accent;
+
+            transition: 0.5s;
+            &:hover,
+            &:focus {
+                background-color: rgba($color-accent, 0.8);
+            }
+        }
+    }
+
+    .services {
+        .services__service-item {
+            grid-column: span 2;
+        }
+        .services__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .services__desc-bottom {
+            line-height: 24px;
+        }
+    }
+
+    .projects {
+        .projects__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    .team {
+        .team__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .team__pic-wrapper {
+            max-width: 640px;
+            margin: 0 auto 40px auto;
+        }
+        .team__main {
+            max-width: 640px;
+            margin: 0 auto 80px auto;
+        }
+    }
+
+    .news {
+        .news__wrapper {
+            max-width: 700px;
+        }
+        .news__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    .footer {
+        .footer__desc {
+            font-size: 24px;
+            line-height: 26px;
+        }
+
+        .footer__links {
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+        }
+        .footer__links-item {
+            display: block;
+            width: 25%;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        .footer__about {
+            width: 100%;
+        }
+        .footer__about-item {
+            grid-column: span 2;
+            align-items: flex-start;
+        }
+    }
+}
+
+// Tablet Portrain
+@media (min-width: 768px) {
+    .intro {
+        min-height: 465px;
+        .intro-slider__item {
+            min-height: 465px;
+        }
+        .intro-slider__title {
+            margin-bottom: 32px;
+        }
+        .intro-slider__desc {
+            display: block;
+            max-width: 590px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 32px;
+        }
+    }
+
+    .promo {
+        .promo__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .promo__items {
+            max-width: 50%;
+        }
+        .promo__title {
+            text-align: left;
+        }
+        .promo__desc {
+            text-align: left;
+        }
+        .promo__to-call {
+            margin: 0;
+        }
+    }
+
+    .projects {
+        .projects__portfolio {
+            max-width: 768px;
+        }
+        .projects__portfolio-item {
+            grid-column: span 2;
+        }
+    }
+
+    .team {
+        .team__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .team__pic-wrapper {
+            min-width: 240px;
+            max-width: 470px;
+            margin: 0;
+            margin-right: 50px;
+        }
+        .team__title,
+        .team__desc {
+            text-align: left;
+        }
+
+        .team__title {
+            &::after {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+
+        .team__link-video {
+            margin: 0;
+        }
+    }
+}
+
+// Desctop
+@media (min-width: 1024px) {
+    .intro {
+        min-height: 618px;
+        .intro-slider__item {
+            min-height: 618px;
+        }
+        .intro-slider__title {
+            padding-top: 100px;
+            font-size: 84px;
+            line-height: 84px;
+            max-width: 450px;
+        }
+    }
+
+    .services {
+        .services__service-item {
+            grid-column: span 1;
+        }
+    }
+
+    .news {
+        .news__wrapper {
+            max-width: 1450px;
+        }
+    }
+
+    .footer {
+        .footer__about-item {
+            grid-column: span 1;
+        }
+    }
+}
+
+// Desctop HD
+@media (min-width: 1440px) {
+    .intro {
+        min-height: 668px;
+        .intro-slider__item {
+            min-height: 668px;
+        }
+        .intro-slider__title {
+            padding-top: 110px;
+            font-size: 96px;
+            line-height: 96px;
+            max-width: 500px;
+        }
+    }
+
+    .services {
+        .services__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .services__header {
+            max-width: 400px;
+            margin-right: 50px;
+        }
+
+        .services__title,
+        .services__desc,
+        .services__desc-bottom {
+            text-align: left;
+        }
+
+        .services__title {
+            margin-bottom: 60px;
+        }
+        .services__desc {
+            margin-bottom: 55px;
+            &::after {
+                left: 0;
+                bottom: -33px;
+                transform: translateX(0);
+                background-color: $color-accent;
+            }
+        }
+    }
+
+    .projects {
+        .projects__portfolio {
+            max-width: 100%;
+        }
+        .projects__portfolio-item {
+            grid-column: span 1;
+        }
+        .projects__portfolio-pic {
+            height: 250px;
+        }
+    }
+
+    .news {
+        .news__wrapper {
+            max-width: 1450px;
+        }
+    }
+}
